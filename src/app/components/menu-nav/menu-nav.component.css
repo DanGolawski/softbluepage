@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    width: 100vw;
+}
+
+#buttons-container {
+    position: absolute;
+    right: 15%;
+    font-size: 2em;
+    top: 50px;
+}
+
+a {
+    padding: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:last-child {
+    background-color: #00c2cb;
+}
+
+a:hover {
+    background-color: #00c2cb;
+}

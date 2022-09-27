@@ -1,0 +1,6 @@
+<form [formGroup]="form" (ngSubmit)="sendComment()">
+    <input formControlName="name" placeholder="Your Name">
+    <input formControlName="email" placeholder="Your Email">
+    <textarea formControlName="text" placeholder="Your Message" rows="6"></textarea>
+    <button type="submit">Send</button>
+</form>

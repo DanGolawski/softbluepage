@@ -1,0 +1,16 @@
+<div id="main-container">
+    <h2>WHAT WE DO</h2>
+    <h1>Better services for you</h1>
+    <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
+
+    <div id="services-container">
+        <div class="service-container" *ngFor="let service of services">
+            <div class="rounded-icon">
+                <div class="rounded-icon-img"></div>
+            </div>
+            <h1>{{ service.title }}</h1>
+            <p class="service-description">{{ service.description }}</p>
+        </div>
+    </div>
+
+</div>

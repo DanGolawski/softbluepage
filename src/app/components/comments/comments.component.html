@@ -1,0 +1,23 @@
+<div id="comments-container">
+    <h1>Comments</h1>
+    <div id="sort-panel">
+        <span (click)="sortComments('asc')">oldest</span>
+        <span>&nbsp;|&nbsp;</span>
+        <span (click)="sortComments('desc')">newest</span>
+    </div>
+    <div *ngFor="let comment of (comments$ | async)">
+        <span class="comment-date">{{ comment.createdAt | date }}</span>
+        <h2>{{ comment.email }}</h2>
+        <span>{{ comment.text }}</span>
+    </div>
+</div>
+
+<div class="pagination">
+    <a>&laquo;</a>
+    <ng-container *ngFor="let num of paginationNumbers; let i = index">
+        <span (click)="getComments(i)">{{ num }}</span>
+    </ng-container>
+    <a>&raquo;</a>
+</div>
+
+<app-comment-form (newComment)="createComment($event)"></app-comment-form>

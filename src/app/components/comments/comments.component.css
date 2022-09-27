@@ -1,0 +1,44 @@
+#comments-container {
+    margin: auto;
+    width: 40%;
+    margin-top: 7%;
+    position: relative;
+}
+
+span {
+    display: inline-block;
+}
+
+.comment-date {
+    margin-top: 60px;
+}
+
+.pagination {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.pagination span {
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination span:hover {
+    background-color: #00c2cb;
+}
+
+.pagination span:first-of-type {
+    background-color: #00c2cb;
+}
+
+#sort-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+#sort-panel span {
+    cursor: pointer;
+}

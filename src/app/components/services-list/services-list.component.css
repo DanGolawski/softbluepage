@@ -1,0 +1,46 @@
+#main-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+#services-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.service-container {
+    flex-grow: 1;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h2:first-of-type {
+    color: #00c2cb;
+}
+
+.service-description {
+    color: darkgray;
+}
+
+.rounded-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #00c2cb;
+    margin: auto;
+    padding: 25px;
+}
+
+.rounded-icon-img {
+    background-image: url(../../../assets/iconmonstr-heart-thin-240.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    margin-top: 20px;
+}

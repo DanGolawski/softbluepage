@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'softblueproject';
+
+  public scrollTo(elementId: string) {
+    document.querySelector(`#${elementId}`)?.scrollIntoView();
+  }
 }
